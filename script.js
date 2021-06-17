@@ -18,14 +18,17 @@ document.addEventListener("keydown", event => {
 });
 var block = document.getElementById("block");
 var score = 0;
+var score2 = 0;
+var scoreT = document.getElementById("scoreT");
+var sl = document.getElementById("scoreLive");
+scoreT = 0;
 block.addEventListener('animationiteration', () => {
    var random = Math.floor(Math.random() * 3);
    left = random * 100;
    block.style.left = left + "px";
    score++;
+   score2++;
 });
-
-
 setInterval(function(){
     var playerLeft = parseInt(window.getComputedStyle(player)
     .getPropertyValue("left"));
@@ -33,16 +36,32 @@ setInterval(function(){
     .getPropertyValue("left"));
     var BlockTop = parseInt(window.getComputedStyle(block)
     .getPropertyValue("top"));
-
+       scoreT = parseInt(score2)+1;
+       scoreLive = parseInt(score)+1;
+    if (score === 5) {
+        block.style.animationDuration = "2.5s";
+    }
+    if (score === 10) {
+        block.style.animationDuration = "2s";
+    }
+    if (score === 15) {
+        block.style.animationDuration = "1.5s";
+    }
+    if (score === 20) {
+        block.style.animationDuration = "1s";
+    }
+    if (score === 30) {
+        block.style.animationDuration = "0.5s";
+    }
     if(playerLeft === BlockLeft &&
         BlockTop<500&&
         BlockTop>300) {
-            document.getElementById("player").style.display = "none";
-        alert('YOU! got just käkad av en grön ferrari! din poäng: ' +score );
         block.style.animation = "none";
-        btn.classList.remove("hide");
+        GO.classList.remove("hide");
+        document.getElementById("scoreLive").style.display = "none";
+        document.getElementById("scoreT").innerHTML = parseInt(score2);
     }
-
+    document.getElementById("scoreLive").innerHTML = parseInt(score);
 },1);
 
 document.getElementById("right").addEventListener("touchstart", moveRight);
