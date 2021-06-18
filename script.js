@@ -55,5 +55,38 @@ document.getElementById("left").addEventListener("touchstart", moveLeft);
 var buttonSettings = document.getElementById("btns");
 
 buttonSettings.addEventListener("click",() => {
-            alert("Arthur LIndblom is working on settings: (releaseDete somDay maybe!)")
+            document.getElementById("btns").style.display = "none";
+            document.getElementById("back").style.display = "block";
+            document.getElementById("controls").style.display = "block";
+            document.getElementById("scoreT").style.display = "none";
+            document.getElementById("btn").style.display = "none";
+            document.getElementById("scoretxt").style.display = "none";
+});
+var back = document.getElementById("back");
+back.addEventListener("click", () => {
+    document.getElementById("scoreT").style.display = "block";
+    document.getElementById("controls").style.display = "none";
+    document.getElementById("back").style.display = "none";
+    document.getElementById("btns").style.display = "block";
+    document.getElementById("btn").style.display = "block";
+    document.getElementById("scoretxt").style.display = "block";
+    document.getElementById("mobile").style.display = "none";
+    document.getElementById("pc").style.display = "none";
+    document.getElementById("mobileH").style.display = "none";
+    document.getElementById("pcH").style.display = "none";
+});
+controls.addEventListener("click", () => {
+    document.getElementById("controls").style.display = "none";
+    document.getElementById("mobile").style.display = "block";
+    document.getElementById("pc").style.display = "block";
+});
+mobile.addEventListener("click", () => {
+    document.getElementById("mobileH").style.display = "block";
+    document.getElementById("mobile").style.display = "none";
+    document.getElementById("pc").style.display = "none";
+});
+pc.addEventListener("click", () => {
+    document.getElementById("pcH").style.display = "block";
+    document.getElementById("mobile").style.display = "none";
+    document.getElementById("pc").style.display = "none";
 });
