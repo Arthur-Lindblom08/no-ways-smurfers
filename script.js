@@ -38,21 +38,7 @@ setInterval(function(){
     .getPropertyValue("top"));
        scoreT = parseInt(score2)+1;
        scoreLive = parseInt(score)+1;
-    if (score === 5) {
-        block.style.animationDuration = "2.5s";
-    }
-    if (score === 10) {
-        block.style.animationDuration = "2s";
-    }
-    if (score === 15) {
-        block.style.animationDuration = "1.5s";
-    }
-    if (score === 20) {
-        block.style.animationDuration = "1s";
-    }
-    if (score === 30) {
-        block.style.animationDuration = "0.5s";
-    }
+  
     if(playerLeft === BlockLeft &&
         BlockTop<500&&
         BlockTop>300) {
@@ -66,3 +52,8 @@ setInterval(function(){
 
 document.getElementById("right").addEventListener("touchstart", moveRight);
 document.getElementById("left").addEventListener("touchstart", moveLeft);
+var buttonSettings = document.getElementById("btns");
+
+buttonSettings.addEventListener("click",() => {
+            alert("Arthur LIndblom is working on settings: (releaseDete somDay maybe!)")
+});
