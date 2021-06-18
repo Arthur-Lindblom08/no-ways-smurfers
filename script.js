@@ -56,17 +56,19 @@ var buttonSettings = document.getElementById("btns");
 
 buttonSettings.addEventListener("click",() => {
             document.getElementById("btns").style.display = "none";
-            document.getElementById("back").style.display = "block";
+            document.getElementById("X").style.display = "block";
             document.getElementById("controls").style.display = "block";
             document.getElementById("scoreT").style.display = "none";
             document.getElementById("btn").style.display = "none";
             document.getElementById("scoretxt").style.display = "none";
+            document.getElementById("cred").style.display = "block";
+            document.getElementById("volume").style.display = "block";
 });
-var back = document.getElementById("back");
+var back = document.getElementById("X");
 back.addEventListener("click", () => {
     document.getElementById("scoreT").style.display = "block";
     document.getElementById("controls").style.display = "none";
-    document.getElementById("back").style.display = "none";
+    document.getElementById("X").style.display = "none";
     document.getElementById("btns").style.display = "block";
     document.getElementById("btn").style.display = "block";
     document.getElementById("scoretxt").style.display = "block";
@@ -74,19 +76,236 @@ back.addEventListener("click", () => {
     document.getElementById("pc").style.display = "none";
     document.getElementById("mobileH").style.display = "none";
     document.getElementById("pcH").style.display = "none";
+    document.getElementById("cred").style.display = "none";
+    document.getElementById("credH").style.display = "none";
+    document.getElementById("volume").style.display = "none";
 });
+
 controls.addEventListener("click", () => {
     document.getElementById("controls").style.display = "none";
     document.getElementById("mobile").style.display = "block";
     document.getElementById("pc").style.display = "block";
+    document.getElementById("cred").style.display = "none";
+    document.getElementById("volume").style.display = "none";
 });
+
 mobile.addEventListener("click", () => {
     document.getElementById("mobileH").style.display = "block";
     document.getElementById("mobile").style.display = "none";
     document.getElementById("pc").style.display = "none";
+    document.getElementById("volume").style.display = "none";
 });
+
 pc.addEventListener("click", () => {
     document.getElementById("pcH").style.display = "block";
     document.getElementById("mobile").style.display = "none";
     document.getElementById("pc").style.display = "none";
+    document.getElementById("volume").style.display = "none";
 });
+
+cred.addEventListener("click", () => {
+    document.getElementById("controls").style.display = "none";
+    document.getElementById("cred").style.display = "none";
+    document.getElementById("credH").style.display = "block";
+    document.getElementById("mobile").style.display = "none";
+    document.getElementById("pc").style.display = "none";
+    document.getElementById("volume").style.display = "none";
+});
+
+volume.addEventListener("click", () => {
+  ///  document.getElementById("controls").style.display = "none";
+  ///  document.getElementById("cred").style.display = "none";
+  ///  document.getElementById("volume").style.display = "none";
+  ///  document.getElementById("mobile").style.display = "none";
+  ///  document.getElementById("pc").style.display = "none";
+  alert("ARTHUR LINDBLOM: WORK IN PROGRESS");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
